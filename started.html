@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h2>CAM-PRO</h2>
+    </header>
+    <main>
+        <div id="my-container" class="container">
+            <div class="register" id="lessondetails" >
+                <h2>Lesson details</h2>
+                <form >
+                    <input id="unit-Name" type="text" placeholder="Unit Name" required>
+                    <input id="unit-code" type="text" placeholder="Unit Code" required>
+                    <input id="lec-name" type="text" placeholder="Lecturer's Name" required>
+                    <input id="venue" type="text" placeholder="Venue" required>
+                  <!--   <input type="datetime-local" required> -->
+                </form>
+                <button onclick="checkLessonValues()" >Save</button>
+            </div>
+            <div id="roll-call" class="Mark displayList">
+                <h2>
+                    Take Roll Call
+                </h2>
+                <form action="" onclick="hidelowerBtn()">
+                    <input type="text" id="studentDetails" placeholder="Enter Reg number">
+                </form>
+                <button id="mark-student" onclick="displayViewBtn()">Mark present</button>
+            </div>
+            <div class="view displayList" id="viewPage">
+                <button onclick="showRegisteredStudent()">view Attendance</button>
+            </div>
+
+            <div id="see-students" class="attendees-container displayList">
+                <div  class="full-list">
+                    <div id="display-area" class="display-area-container ">
+
+                    </div>
+                    <div class="studentsPresentIn">
+                        <h4 class="studentsPresentInHeading">Students Present</h4>
+                        <ol id="studentsmarked">
+                            <!-- <li>Stephen</li>
+                            <li>Stephen</li> -->
+                           <!--  <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li>
+                            <li>Stephen</li> -->
+                         </ol>
+                    </div>
+                    <div id="clear-list" class="reset-list">
+                        <button onclick="resetData()"> Clear List</button>
+                    </div>
+                   
+                    <div class="back">
+                        <a href="index.html"><button>Back Home</button></a>
+                    </div>
+                    
+                </div>
+               
+               
+            </div>
+           
+            
+        </div>
+    <footer>
+        &copy;Carl solutions 2024
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
